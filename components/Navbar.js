@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <nav style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '1rem', boxShadow: 'var(--box-shadow)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Toán Trung Học</Link>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.png" style={{ height: '40px', objectFit: 'contain' }} alt="Me&Math Logo" />
+        </Link>
         <div style={{ display: 'flex', gap: '2rem', fontWeight: '500' }}>
           <Link href="/category/math-stories" style={{ transition: 'opacity 0.2s' }} className="nav-link">Math Stories</Link>
           <Link href="/category/did-you-know" style={{ transition: 'opacity 0.2s' }} className="nav-link">Did You Know?</Link>

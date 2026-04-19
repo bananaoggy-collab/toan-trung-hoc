@@ -48,10 +48,13 @@ export default function CommentSection({ postId, initialComments }) {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         {comments.length === 0 ? <p style={{ color: 'var(--color-text-muted)' }}>Hãy là người đầu tiên bình luận!</p> : comments.map(c => (
-          <div key={c.id} style={{ padding: '1.5rem', background: '#fff', borderRadius: 'var(--border-radius)', border: '1px solid var(--color-border)' }}>
-            <strong style={{ fontSize: '1.1rem' }}>{c.author}</strong> 
-            <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', marginLeft: '1rem' }}>{new Date(c.created_at).toLocaleDateString('vi-VN')}</span>
-            <p style={{ marginTop: '0.75rem', marginBottom: 0, lineHeight: '1.5' }}>{c.content}</p>
+          <div key={c.id} style={{ display: 'flex', gap: '1rem', padding: '1.5rem', background: '#f8fafc', borderRadius: 'var(--border-radius)', border: '1px solid var(--color-border)' }}>
+            <img src={`https://ui-avatars.com/api/?name=${encodeURIComponent(c.author)}&background=000B3D&color=fff&rounded=true`} alt={c.author} style={{ width: '45px', height: '45px', borderRadius: '50%' }} />
+            <div>
+              <strong style={{ fontSize: '1.05rem', color: 'var(--color-text)' }}>{c.author}</strong> 
+              <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', marginLeft: '0.6rem' }}>{new Date(c.created_at).toLocaleDateString('vi-VN')}</span>
+              <p style={{ marginTop: '0.5rem', marginBottom: 0, lineHeight: '1.6', color: 'var(--color-text)' }}>{c.content}</p>
+            </div>
           </div>
         ))}
       </div>

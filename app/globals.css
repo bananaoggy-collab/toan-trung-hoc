@@ -1,15 +1,15 @@
 :root {
   /* Color Palette */
-  --color-primary: #2BA4CC;       /* Rich light blue/blue */
-  --color-primary-light: #4DC2E9;
-  --color-primary-dark: #1F8AAE;
-  --color-secondary: #0ea5e9;
+  --color-primary: #000B3D;       /* dark navy */
+  --color-primary-light: #1a2f7a;
+  --color-primary-dark: #000828;
+  --color-secondary: #000B3D;
   
-  --color-bg: #f8fafc;
-  --color-bg-white: #ffffff;
+  --color-bg: #FFFFFF;
+  --color-bg-white: #FFFFFF;
   
-  --color-text: #0f172a;
-  --color-text-muted: #64748b;
+  --color-text: #000B3D;
+  --color-text-muted: #1a2f7a;
   
   --color-border: #e2e8f0;
   

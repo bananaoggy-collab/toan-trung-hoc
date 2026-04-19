@@ -12,8 +12,18 @@ export default async function HomePage() {
     <>
       <Navbar />
       <main className="main-content">
-        <section style={{ textAlign: 'center', padding: '5rem 1rem', background: 'linear-gradient(135deg, var(--color-primary-light), var(--color-primary))', color: 'white', borderRadius: 'var(--border-radius)', marginBottom: '3rem', boxShadow: 'var(--box-shadow)' }}>
-          <h1 style={{ fontSize: '3.5rem', color: 'white', marginBottom: '1rem' }}>Toán Trung Học</h1>
+        <section style={{ 
+          textAlign: 'center', 
+          padding: '6rem 1rem', 
+          color: 'white', 
+          borderRadius: 'var(--border-radius)', 
+          marginBottom: '3rem', 
+          boxShadow: 'var(--box-shadow)',
+          backgroundImage: 'linear-gradient(rgba(0, 11, 61, 0.7), rgba(0, 11, 61, 0.7)), url(/banner.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
+          <h1 style={{ fontSize: '3.5rem', color: 'white', marginBottom: '1rem' }}>Me&Math</h1>
           <p style={{ fontSize: '1.3rem', maxWidth: '700px', margin: '0 auto', opacity: 0.9 }}>Học toán chưa bao giờ dễ dàng và thú vị đến thế. Khám phá lý thuyết trực quan, giải bài tập chi tiết và làm quen đề thi thực tế.</p>
         </section>
 

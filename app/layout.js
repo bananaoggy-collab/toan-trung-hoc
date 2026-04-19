@@ -8,8 +8,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Toán Trung Học - Website Học Toán Số 1",
+  title: "Me&Math - Education for everyone",
   description: "Trang web giáo dục toán học dành cho học sinh trung học. Cung cấp lý thuyết, bài tập, và đề thi với công thức trực quan.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
